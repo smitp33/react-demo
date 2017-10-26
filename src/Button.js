@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Button extends Component {
+export class Button extends Component {
 
    handleClick = () => {
      this.props.onClickFunction(this.props.incrementValue)
@@ -15,7 +15,7 @@ class Button extends Component {
   }
 }
 
-const Result = (props) => {
+export const Result = (props) => {
   return(
     <div>{props.counter}</div>
   )
@@ -44,4 +44,4 @@ class App extends Component {
   }
 }
 
-export default (App, Button, Result);
+export default App
