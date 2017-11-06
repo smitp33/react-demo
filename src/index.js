@@ -6,6 +6,7 @@ import App2 from './Button'
 import {Button, Result} from './Button'
 import App3 from './Card'
 import App4 from './Game'
+import { ProgressCircle1, ProgressCircle2} from './ProgressCircles'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App1 />, document.getElementById('root'));
@@ -14,5 +15,7 @@ ReactDOM.render(<Button incrementValue="2" onClickFunction={this.handleClick}/>,
 ReactDOM.render(<Result counter="2"/>, document.getElementById('c'));
 
 ReactDOM.render(<App3 />, document.getElementById('d'));
-ReactDOM.render(<App4 />, document.getElementById('d'));
+ReactDOM.render(<App4 />, document.getElementById('e'));
+ReactDOM.render(<ProgressCircle1 />, document.getElementById('f'));
+ReactDOM.render(<ProgressCircle2 />, document.getElementById('g'));
 registerServiceWorker();

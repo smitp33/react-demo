@@ -1,0 +1,4 @@
+.CircularProgressbar-path { stroke: #ffc100; stroke-width: 10px }
+.CircularProgressbar-trail { stroke: #606772; stroke-width: 3px;}
+.CircularProgressbar-text { fill: #ffc100; text-anchor: middle;}
+.CircularProgressbar-background { fill: #344152; }
