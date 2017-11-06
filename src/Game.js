@@ -12,7 +12,7 @@ var possibleCombinationSum = function(arr, n) {
   for (var i = 1; i < combinationsCount ; i++ ) {
     var combinationSum = 0;
     for (var j=0 ; j < listSize ; j++) {
-      if (i & (1 << j)) { combinationSum += arr[j]; }
+      if (i && (1 << j)) { combinationSum += arr[j]; }
     }
     if (n === combinationSum) { return true; }
   }
@@ -25,7 +25,7 @@ const Stars = (props) => {
   return (
     <div className="col-5">
       {_.range(props.numberOfStars).map(i =>
-        <i key={i} className="fa fa-star"></i>
+        <i key={i} className="fa fa-star"/>
       )}
     </div>
   )
@@ -36,12 +36,12 @@ const Button = (props) => {
   switch(props.answerIsCorrect){
     case true:
       button =  <button className="btn btn-success"  onClick={props.acceptAnswer}>
-                  <i className="fa fa-check"></i>
+                  <i className="fa fa-check"/>
                 </button>
       break
     case false:
                 button =  <button className="btn btn-danger" >
-                  <i className="fa fa-times"></i>
+                  <i className="fa fa-times"/>
                 </button>
       break
     default:
@@ -61,7 +61,7 @@ const Button = (props) => {
       <br/>
       <button className="btn btn-warning btn-sm" onClick={props.redraw}
               disabled={props.redraws === 0}>
-        <i className="fa fa-refresh"></i> {props.redraws}
+        <i className="fa fa-refresh"/> {props.redraws}
       </button>
     </div>
   )
