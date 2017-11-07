@@ -22,7 +22,7 @@ const text = () => {
 
 export const ProgressCircle2 = (props) => {
 
-  const style = { 'background-color': '#344152'}
+  const style = { 'backgroundColor': '#344152'}
 
   return(
     <div className="container">

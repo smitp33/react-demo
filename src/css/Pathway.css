@@ -1,0 +1,5 @@
+.Pathway-line { stroke: #ededed; stroke-width: 0.5px }
+.Pathway-text { }
+.Pathway-circle { }
+.Pathway { font-size: 0.1rem; text-anchor: middle; text-transform: uppercase; fill: #ededed;}
+.Pathway-selected { fill: #9c9c9c; font-size: 0.1rem;}
