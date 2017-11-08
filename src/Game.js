@@ -31,7 +31,7 @@ const Stars = (props) => {
   )
 }
 
-const Button = (props) => {
+export const Button = (props) => {
   let button;
   switch(props.answerIsCorrect){
     case true:
@@ -112,7 +112,7 @@ const DoneFrame = (props) => {
   )
 }
 
-class Game extends Component {
+export class Game extends Component {
   static randomNumber = () => 1 + Math.floor(Math.random()*9)
   static initialState = () => ({
     selectedNumbers: [],

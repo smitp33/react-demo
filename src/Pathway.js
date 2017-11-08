@@ -8,7 +8,7 @@ import './css/Pathway.css'
 
 const xPos = (position, props) => {
   let xPos = position * props.gap
-  console.log("xPos: " + xPos)
+  //console.log("xPos: " + xPos)
   return (xPos)
 }
 

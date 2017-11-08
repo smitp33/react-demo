@@ -14,7 +14,7 @@ const Card = (props) => {
   )
 }
 
-export const CardList = (props) => {
+const CardList = (props) => {
   return (
     <div>
       {props.cards.map((card) => <Card key={card.id} {...card} />)}
@@ -32,7 +32,8 @@ class Form extends Component {
       .then(resp => {
         this.props.onSubmit(resp.data)
         this.setState({userName: ''})
-      })
+      }
+    )
   }
 
   render() {
