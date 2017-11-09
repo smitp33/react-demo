@@ -7,16 +7,19 @@ test('handles Click event', () => {
   expect(wrapper.state().counter).toEqual(0)
   wrapper.find('button')
          .simulate('click')
-         .then(
+         
            expect(wrapper.state().counter).toEqual(1)
-         )
+         
 
   console.log(wrapper.state().counter)
 });
 
-test('calls Async Click event', () => {
+test('calls Async Click event', async () => {
   const wrapper = mount(<Parent />)
-  wrapper.instance().onClickAsync()
+  console.log(wrapper.state().counter)
+  await wrapper.instance().onClickAsync()
+  console.log(wrapper.state().counter)
+  expect(wrapper.state().counter).toEqual(1)
 });
 
 

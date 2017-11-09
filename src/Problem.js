@@ -13,13 +13,15 @@ class Parent extends Component {
 
   onClickAsync = () => {
     console.log("Async Button clicked")
-    axios.get(`https://api.github.com/users/smitp33`)
-      .then(resp => {
-          this.setState(prevState => ({
-            counter: prevState.counter + 1
-          }))
-        }
-      )
+    return (
+		axios.get(`https://api.github.com/users/smitp33`)
+		  .then(resp => {
+			  this.setState(prevState => ({
+				counter: prevState.counter + 1
+			  }))
+			}
+	  )
+	)
   }
 
   render() {
@@ -35,7 +37,7 @@ class Child extends Component {
 
   render() {
     return (
-      <button onClick={this.props.onClickAsync}>{this.props.action}</button>
+      <button onClick={this.props.onClick} >{this.props.action}</button>
     )
   }
 }
