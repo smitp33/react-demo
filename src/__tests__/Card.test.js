@@ -21,7 +21,7 @@ it('handles Form entry', () => {
   const input = wrapper.find('input').at(0);
   input.simulate('change', { target: { value: 'smitp33' } });
   form.simulate('submit');
-  console.log(wrapper.state().cards.length)
+ console.log(wrapper.state().cards.length)
 });
 
 
@@ -34,3 +34,5 @@ it('function addNewCard', () => {
   wrapper.instance().addNewCard(card)
 
 });
+
+

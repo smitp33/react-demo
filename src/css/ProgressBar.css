@@ -1,0 +1,24 @@
+.horizontal {
+  width: calc(100% - (11px - 2%));
+  height: 12px;
+
+}
+
+.vertical {
+  height: calc(100% - (11px - 2%));
+  width: 12px;
+  top: 2%;
+
+  left: 2px;
+}
+
+.progressBar, .progressBar-progress {
+  background-color: #d8d8d8;
+  border-radius: 14px;
+  position: absolute;
+
+}
+
+.progressBar-progress {
+  background-color: green;
+}

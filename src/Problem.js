@@ -20,7 +20,7 @@ class Parent extends Component {
 				counter: prevState.counter + 1
 			  }))
 			}
-	  )
+		  )
 	)
   }
 
