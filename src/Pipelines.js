@@ -18,9 +18,9 @@ const Pipelines = (props) => {
                 &nbsp;
             <h1 className="margin-1-l">Pipelines</h1>
             <div className="container margin-1-l pad-1-t dls-accent-gray-01-bg">
-                <Pipeline stages='1'/>
-                <Pipeline stages='2'/>
-                <Pipeline />
+                <Pipeline suffix="SL" stages='1'/>
+                <Pipeline suffix="HF"stages='2'/>
+                <Pipeline suffix="HL"/>
             </div>
 
         </div>
@@ -28,7 +28,7 @@ const Pipelines = (props) => {
 }
 
 Pipelines.defaultProps = {
-    stages: 3
+    dummy: 1
 };
 
 export default Pipelines
