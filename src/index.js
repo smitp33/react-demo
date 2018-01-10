@@ -9,6 +9,7 @@ import App3 from './Card'
 //import { ProgressCircle1, ProgressCircle2} from './ProgressCircles'
 import registerServiceWorker from './registerServiceWorker';
 import DemoComponents from './DemoComponents'
+import Pipelines from './Pipelines'
 
 
 //ReactDOM.render(<App1 />, document.getElementById('root'));
@@ -16,10 +17,10 @@ import DemoComponents from './DemoComponents'
 //ReactDOM.render(<Button incrementValue="2" onClickFunction={this.handleClick}/>, document.getElementById('b'));
 //ReactDOM.render(<Result counter="2"/>, document.getElementById('c'));
 
-ReactDOM.render(<App3 />, document.getElementById('d'));
+//ReactDOM.render(<App3 />, document.getElementById('d'));
 //ReactDOM.render(<App4 />, document.getElementById('e'));
 
 
-ReactDOM.render(<DemoComponents />, document.getElementById('h'));
+ReactDOM.render(<Pipelines />, document.getElementById('h'));
 registerServiceWorker();
 

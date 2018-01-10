@@ -3,6 +3,7 @@ import CircularProgressbar from 'react-circular-progressbar';
 import './css/ProgressCircles.css'
 import Pathway from './Pathway'
 import ProgressBar from './ProgressBar'
+import Pipeline from './Pipeline'
 
 
 const text = () => {
@@ -73,6 +74,17 @@ export const DemoComponents = (props) => {
                   &nbsp;
         </div>
       </div>
+        <div className="row">
+        <div className="col-xs-12 col-sm-4 col-md-4">
+            <h4>Pipeline</h4>
+        </div>
+    </div>
+    <div className="row">
+        <div className="col-xs-12 col-sm-4 col-md-4" style={style}>
+            <Pipeline />
+            &nbsp;
+        </div>
+    </div>
     </div>
   )
 
