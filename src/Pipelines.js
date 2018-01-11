@@ -4,9 +4,8 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import './css/Pipelines.css'
-import _ from 'lodash'
 import Pipeline from "./Pipeline";
-import Pathway from "./Pathway";
+import PipelineHeadings from "./PipelineHeadings"
 import Header from "./Header"
 
 
@@ -14,10 +13,11 @@ const Pipelines = (props) => {
 
     return (
         <div>
-                <Header />
+            <Header />
                 &nbsp;
             <h1 className="margin-1-l">Pipelines</h1>
             <div className="container margin-1-l pad-1-t dls-accent-gray-01-bg">
+                <PipelineHeadings />
                 <Pipeline suffix="SL" stages='1'/>
                 <Pipeline suffix="HF"stages='2'/>
                 <Pipeline suffix="HL"/>
